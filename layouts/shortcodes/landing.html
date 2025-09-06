@@ -108,29 +108,25 @@
 
 <body>
 
-    <div 
-    class="hero-box align-items-center"
-    style="background-image: url('{{ absURL "images/map-bg-5.png"}}'); 
-    background-size: cover;
-  background-position: center;"
-    >
+    <div class="hero-box align-items-center" style="background-image: url('{{ absURL "images/map-bg-5.png"}}');
+        background-size: cover; background-position: center;">
         <div class="container mt-4">
-            <div class="row align-items-center">
-
+            <div class="row">
                 <div class="col-sm-6">
                     <h1 class="mb-4"><b>UK Crash Map: Explore the UK's Road Safety Landscape</b></h1>
-                    <p class="mb-4">Unlock access to comprehensive UK road accident data. Visualize historical crashes, filter by
+                    <p class="mb-4">Unlock access to comprehensive UK road accident data. Visualize historical crashes,
+                        filter by
                         location, time,
                         and conditions, and gain insights that drive safer roads, smarter city planning, and impactful
                         research.</p>
                     <div class="buttons">
-                        <button class="demo-btn" onclick="window.location.href='https://demo.ukcrashmap.com'">Explore the Demo</button>
+                        <button class="demo-btn" onclick="window.location.href='https://demo.ukcrashmap.com'">Explore
+                            the Demo</button>
                     </div>
 
                 </div>
                 <div class="col-sm-6">
-                    <img 
-                    src="{{ absURL "images/map-demo-ui.png"}}" class="figure-img img-fluid rounded"
+                    <img src="{{ absURL "images/map-demo-ui.png"}}" class="figure-img img-fluid rounded"
                         alt="Figure 2">
                 </div>
             </div>
@@ -145,12 +141,76 @@
             helping you uncover patterns, hotspots, and trends that can inform better road safety decisions.</p>
     </section>
 
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-sm-3  d-flex justify-content-center">
+                <div class="card" style="width:18rem">
+                    <img src="{{ absURL "images/feature-visualization.png"}}" class="card-img-top" alt="Visualization">
+                    <div class="card-body border-top">
+                        <h4 class="card-title">Visualization</h4>
+                        <p class="card-text">See the data come alive. Every crash is plotted directly on a map, giving
+                            you an instant visual overview of accident hotspots, trends, and distributions across the
+                            UK.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3  d-flex justify-content-center">
+                <div class="card" style="width:18rem">
+                    <img src="{{ absURL "images/feature-filter.png"}}" class="card-img-top" alt="Visualization">
+                    <div class="card-body border-top">
+                        <h4 class="card-title">Filter</h4>
+                        <p class="card-text">Apply fine-grained filters to explore crash data by year, severity,
+                            weather, road type, time of day,
+                            and more. Focus only on the data that matters to your research or analysis.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3  d-flex justify-content-center">
+                <div class="card" style="width:18rem">
+                    <img src="{{ absURL "images/feature-api.png"}}" class="card-img-top" alt="Visualization">
+                    <div class="card-body border-top">
+                        <h4 class="card-title">API</h4>
+                        <p class="card-text">Access accident data programmatically with our API. Apply the same filters
+                            and retrieve exactly the
+                            dataset you need, ready for analysis, reporting, or integration with your workflows.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
     <section>
         <h3>Partnerships & Investment</h3>
         <p>ukcrashmap is currently in development. We are seeking partnerships and investment to expand our capabilities
             and impact, bringing detailed UK road safety insights to more users and decision-makers.</p>
     </section>
 
+    <section id="newsletter" class="py-5 bg-light">
+        <div class="container text-center">
+            <h3 class="mb-3">Subscribe to Our Newsletter</h3>
+            <p class="mb-4">
+                Get the latest updates on features, datasets, and news delivered straight to your inbox.
+            </p>
+            <form class="row g-2 justify-content-center" action="https://demo.ukcrashmap.com/subscribe" method="post">
+                <div class="col-md-6 col-lg-4">
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-secondary px-4">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 
 </body>
 
