@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ukcrashmap</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #0ec53c;
+            color: #fff;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #24991e, #4abd5b);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        .hero .buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+
+
+
+        .newsletter-btn {
+            background-color: #fff;
+            color: #1e3799;
+            border: 2px solid #1e3799;
+        }
+
+        .newsletter-btn:hover {
+            background-color: #1e3799;
+            color: #fff;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div 
+    class="hero-box align-items-center"
+    style="background-image: url('{{ absURL "images/map-bg-5.png"}}'); 
+    background-size: cover;
+  background-position: center;"
+    >
+        <div class="container mt-4">
+            <div class="row align-items-center">
+
+                <div class="col-sm-6">
+                    <h1 class="mb-4"><b>UK Crash Map: Explore the UK's Road Safety Landscape</b></h1>
+                    <p class="mb-4">Unlock access to comprehensive UK road accident data. Visualize historical crashes, filter by
+                        location, time,
+                        and conditions, and gain insights that drive safer roads, smarter city planning, and impactful
+                        research.</p>
+                    <div class="buttons">
+                        <button class="demo-btn" onclick="window.location.href='#'">Explore the Demo</button>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <img 
+                    src="{{ absURL "images/map-demo-ui.png"}}" class="figure-img img-fluid rounded"
+                        alt="Figure 2">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section>
+        <h3>Who is ukcrashmap for?</h3>
+        <p>Whether you’re a curious member of the public, a researcher, or a policymaker, ukcrashmap makes it easy to
+            explore and analyze UK crash data like never before. Our interactive maps provide fine-grained filters,
+            helping you uncover patterns, hotspots, and trends that can inform better road safety decisions.</p>
+    </section>
+
+    <section>
+        <h3>Partnerships & Investment</h3>
+        <p>ukcrashmap is currently in development. We are seeking partnerships and investment to expand our capabilities
+            and impact, bringing detailed UK road safety insights to more users and decision-makers.</p>
+    </section>
+
+
+</body>
+
+</html>

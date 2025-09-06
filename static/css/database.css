@@ -1,0 +1,55 @@
+
+
+.table-header {
+    background-color: rgb(0,112,192);
+    color: rgb(255,255,255);
+}
+
+.table-row-country-name {
+    background-color: rgb(208,208,208);
+    font-weight: bold;
+}
+
+.table-row-national-total {
+    background-color: rgb(218,242,208);
+    font-weight: bold;
+}
+
+.table-row-total-other {
+    background-color: rgb(0,112,192);
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+.table-row-total-disclose {
+    background-color: rgb(39,83,23);
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
+
+.footnote {
+    background-color: rgb(220, 240, 255);
+    border: solid 1px rgba(0,0,0, 0.1);
+    /* color: rgb(255,255,255); */
+    padding: 12px;
+}
+
+.table1 td, .table1 tr{
+    padding: 2px 8px;
+    border-bottom: solid 1px rgb(240, 240, 240);
+}
+
+.table1-number-cell {
+    min-width: 80px;
+    max-width: 80px;
+    padding: 4px 8px;
+    text-align: center;
+    border-bottom: solid 1px rgb(240, 240, 240);
+}
+
+.table1-meta-cell {
+    min-width: 300px;
+    max-width: 300px;
+    padding: 2px 8px;
+    border-bottom: solid 1px rgb(240, 240, 240);
+}

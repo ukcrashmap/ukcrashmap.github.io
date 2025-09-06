@@ -1,0 +1,41 @@
+{{- $page := .Page }}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    {{- with index site.Menus "main" }}
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {{- range . }}
+        {{- $attrs := dict }}
+        {{- if $page.IsMenuCurrent .Menu . }}        
+        {{- $attrs = merge $attrs (dict "class" "nav-link active" "aria-current" "page") }}
+        {{- else if $page.HasMenuCurrent .Menu .}}
+        {{- $attrs = merge $attrs (dict "class" "nav-link dropdown-toggle ancestor menu-active" "aria-current" "true") }}
+        {{- else if .HasChildren }}
+        {{- $attrs = merge $attrs (dict "class" "nav-link dropdown-toggle" "aria-current" "true") }}
+        {{- else }}
+        {{- $attrs = merge $attrs (dict "class" "nav-link" "aria-current" "true") }}
+        {{- end }}
+        {{- $name := .Name }}
+        {{- with .Identifier }}
+        {{- with T . }}
+        {{- $name = . }}
+        {{- end }}
+        {{- end }}
+        {{- $attrs = merge $attrs (dict "href" .URL) }}
+        <li class="nav-item">
+          <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end
+            -}}>
+            {{ $name | safeHTML }}
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </div>
+</nav>

@@ -1,0 +1,10 @@
+baseURL = 'https://www.ukcrashmap.com/'
+languageCode = 'en-us'
+title = 'UK Crash Map'
+
+[menus]
+
+[[menus.main]]
+name = 'UK Crash Map'
+pageRef = '/'
+weight = 10
